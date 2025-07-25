@@ -24,8 +24,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: #010101;
-  border-bottom: 1px solid #b6895b;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@ body {
   color: var(--primary);
 }
 
-.navbar .navbar-nav {
+.navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
   font-size: 1.3rem;
@@ -66,4 +66,43 @@ body {
 
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+  color: var(--primary);
+}
+
+#hamburger-menu{
+  display: none;
+}
+
+
+
+
+/* media queris */
+
+/* laptop */
+@media (max-width: 1366px){
+  html{
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 1366px){
+  html{
+    font-size: 62.5%;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 1366px){
+  html{
+    font-size: 75%;
+  }
 }
